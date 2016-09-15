@@ -13,6 +13,7 @@
 		274FE1721D88739B0027EF0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274FE1711D88739B0027EF0E /* Assets.xcassets */; };
 		274FE1751D88739B0027EF0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274FE1731D88739B0027EF0E /* LaunchScreen.storyboard */; };
 		27C869351D8B0D0D00045924 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C869341D8B0D0D00045924 /* FactModel.swift */; };
+		27C869371D8B201500045924 /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C869361D8B201500045924 /* ColorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		274FE1741D88739B0027EF0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		274FE1761D88739B0027EF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27C869341D8B0D0D00045924 /* FactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		27C869361D8B201500045924 /* ColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				274FE1731D88739B0027EF0E /* LaunchScreen.storyboard */,
 				274FE1761D88739B0027EF0E /* Info.plist */,
 				27C869341D8B0D0D00045924 /* FactModel.swift */,
+				27C869361D8B201500045924 /* ColorModel.swift */,
 			);
 			path = TeamTreehouseFunFacts;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				27C869351D8B0D0D00045924 /* FactModel.swift in Sources */,
 				274FE16D1D88739B0027EF0E /* ViewController.swift in Sources */,
 				274FE16B1D88739B0027EF0E /* AppDelegate.swift in Sources */,
+				27C869371D8B201500045924 /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

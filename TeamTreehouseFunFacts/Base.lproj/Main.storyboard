@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,23 +18,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdI-l2-yah">
-                                <rect key="frame" x="210" y="285" width="180" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4S-Ra-dqh">
+                                <rect key="frame" x="40" y="239" width="520" height="122"/>
+                                <string key="text">There are two high level kinds of constraints we add to our elements - positioning and size. We've added a few constraints to the factLabel; in this video, let's add the rest and get it sorted. There are two high level kinds of constraints we add to our elements - positioning and size. We've added a few constraints to the factLabel; in this video, let's add the rest and get it sorted.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RiY-lc-v0g">
+                                <rect key="frame" x="40" y="130" width="118" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdI-l2-yah">
+                                <rect key="frame" x="40" y="480" width="520" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9C8-g3-ZeN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.71372549019607845" green="0.0" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Show Another Fun Fact"/>
                                 <connections>
                                     <action selector="showFunFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="g5p-Md-oHX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some fact goes here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4S-Ra-dqh">
-                                <rect key="frame" x="20" y="197" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.77403017241379313" green="0.088550646551724135" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="u4S-Ra-dqh" firstAttribute="top" secondItem="RiY-lc-v0g" secondAttribute="bottom" constant="88" id="KGc-Wm-edU"/>
+                            <constraint firstItem="JdI-l2-yah" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="20" id="NaJ-LU-Q2q"/>
+                            <constraint firstItem="JdI-l2-yah" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Pd7-ww-Gvs"/>
+                            <constraint firstItem="JdI-l2-yah" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="SdY-Ul-0St"/>
+                            <constraint firstItem="u4S-Ra-dqh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="UrV-vg-fpi"/>
+                            <constraint firstItem="u4S-Ra-dqh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ddV-Cf-J1k"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JdI-l2-yah" secondAttribute="bottom" constant="80" id="eAf-VX-rIE"/>
+                            <constraint firstItem="RiY-lc-v0g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="fW6-ka-bds"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JdI-l2-yah" secondAttribute="trailing" constant="20" id="gn5-KM-lmM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JdI-l2-yah" secondAttribute="trailing" constant="20" id="gsj-Ma-5iu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u4S-Ra-dqh" secondAttribute="trailing" constant="20" id="jTQ-CC-Qs0"/>
+                            <constraint firstItem="RiY-lc-v0g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="110" id="nT5-5h-hAB"/>
+                            <constraint firstItem="JdI-l2-yah" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="rET-ll-M46"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KGc-Wm-edU"/>
+                                <exclude reference="NaJ-LU-Q2q"/>
+                                <exclude reference="SdY-Ul-0St"/>
+                                <exclude reference="gsj-Ma-5iu"/>
+                                <exclude reference="rET-ll-M46"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="funFactButton" destination="JdI-l2-yah" id="tSJ-Kf-Klo"/>
                         <outlet property="funFactLabel" destination="u4S-Ra-dqh" id="SZv-lq-YmD"/>
                     </connections>
                 </viewController>

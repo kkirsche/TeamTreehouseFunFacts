@@ -6,6 +6,7 @@
 //  Copyright © 2016 Kevin Kirsche. All rights reserved.
 //
 
+import GameKit
 
 struct FactModel {
     let facts = [
@@ -21,6 +22,14 @@ struct FactModel {
         "Mammoths still walked the Earth when the Great Pyramid was being built." ]
     var position = 0
     
+    func getFact() -> String {
+        return self.facts[self.position]
+    }
+    
+    func getRandomFact() -> String {
+        return self.facts[GKRandomSource.sharedRandom().nextIntWithUpperBound(self.facts.count)]
+    }
+    
     mutating func nextFact() -> String {
         self.position += 1
         if self.position > (self.facts.count - 1) {
@@ -28,9 +37,5 @@ struct FactModel {
         }
         
         return self.getFact()
-    }
-    
-    func getFact() -> String {
-        return self.facts[self.position]
     }
 }
